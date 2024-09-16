@@ -2025,41 +2025,52 @@ section,
 /* Marquee container */
 .marquee {
   overflow: hidden;
-  white-space: nowrap;
   position: relative;
   box-sizing: border-box;
+  width: 100%; /* Ensure it takes the full width of the container */
 }
 
-/* Ensure the content is wider than the container */
+/* Ensure the content is wider than the container and duplicated */
 .marquee-content {
   display: flex;
-  animation: marquee 10s linear infinite; /* Shorter duration for faster scroll */
+  animation: marquee 15s linear infinite;
+  width: max-content; /* Allow content to adjust dynamically */
 }
 
 /* Style for each marquee item */
 .marquee-item {
   flex: 0 0 auto;
-  padding: 0 10px; /* Adjust spacing between items */
+  padding: 0 10px;
 }
 
 /* Ensure images are equal size and responsive */
 .marquee-item img {
-  width: 350px; /* Set a fixed width */
-  height: auto; /* Maintain aspect ratio */
-  max-height: 200px; /* Set a maximum height if needed */
-  object-fit: contain; /* Ensure images fit within their container */
-  border-radius: 8px; /* Optional: add rounded corners */
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  max-height: 200px;
+  object-fit: contain;
+  border-radius: 8px;
 }
 
-/* Keyframes for scrolling effect */
+/* Keyframes for smooth scrolling effect */
 @keyframes marquee {
   0% {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-50%); /* Move halfway through the content for continuous scroll */
   }
 }
+
+/* Duplicate content to ensure continuous scroll */
+.marquee-content::before,
+.marquee-content::after {
+  content: attr(data-text); /* Duplicate the entire content */
+  display: inline-block;
+}
+
+
 
 
 .portfolio h6{
