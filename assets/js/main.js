@@ -244,8 +244,6 @@
  
 
 
-
-
 const typed = new Typed('.multiple',{
   strings: ['Student','Full-Stack Developer','Mobile Developer'],
   typeSpeed:50,
@@ -254,7 +252,18 @@ const typed = new Typed('.multiple',{
   loop:true
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+  // For the first span with the "I am a" section
+ 
 
-
+  // For the nickname span
+  var typedNickname = new Typed('.nickname .typed', {
+    strings: document.querySelector('.nickname .typed').getAttribute('data-typed-items').split(','),
+    typeSpeed: 100,
+    backSpeed: 50,
+    backDelay: 2000,
+    loop: true
+  });
+});
 
 

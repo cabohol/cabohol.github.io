@@ -1072,13 +1072,26 @@ section,
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
+.about .typed{
+  color: #18d26e;
+
+}
  .about .left strong{
   color: #18d26e;
  }
  .about .right span{
   color: #18d26e;
  }
+ .about .myname{
+  color: #18d26e;
+ }
+ .about .educ-high{
+  color: #18d26e;
+ }
+ .bi-chevron-right{
+  color: #18d26e;
 
+ }
  .about .nickname{
   color: #18d26e;
  }
