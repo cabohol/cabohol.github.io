@@ -1369,13 +1369,17 @@ section,
   margin: -40px 0 0 40px;
   position: relative;
   z-index: 2;
-  border: 6px solid var(--background-color);
+  border: 6px solid var(--contrast-color);
 }
 
 .testimonials .testimonial-item h3 {
   font-size: 18px;
   font-weight: bold;
   margin: 10px 0 5px 45px;
+}
+.txt{
+  font-weight: 2px ;
+  font-size: 13px;
 }
 
 .testimonials .testimonial-item h4 {
