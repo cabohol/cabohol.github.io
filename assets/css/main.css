@@ -1378,9 +1378,12 @@ section,
   margin: 10px 0 5px 45px;
 }
 .txt{
-  font-weight: 2px ;
+  font-weight: 2px;
   font-size: 13px;
+ 
 }
+
+
 
 .testimonials .testimonial-item h4 {
   font-size: 14px;
@@ -1439,6 +1442,29 @@ section,
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
   background-color: var(--accent-color);
 }
+
+/* Responsive adjustments for mobile */
+@media (max-width: 767px) {
+  .testimonials .testimonial-item h3 {
+    font-size: 15px; /* Smaller font size for h3 on mobile */
+    margin-left: 20px; /* Adjust margin for better spacing */
+  }
+
+  .testimonials .testimonial-item h4 {
+    font-size: 12px; /* Smaller font size for h4 on mobile */
+    margin-left: 20px; /* Adjust margin for better spacing */
+  }
+
+  .testimonials .testimonial-item p {
+    font-size: 10px; /* Smaller font size for text on mobile */
+    padding: 20px 20px 50px 20px; /* Adjust padding for better appearance */
+
+  }
+  
+
+  
+}
+
 
 /*--------------------------------------------------------------
 # Resume Section
