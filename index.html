@@ -15,7 +15,7 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -46,34 +46,26 @@
 
 <body class="index-page">
 
-  <header id="header" class="header d-flex align-items-center fixed-top">
+  <header id="header" class="header header-modern d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename"><span>C.A.</span> BOHOL</h1>
+        <div class="logo-circle">C</div>
+        <span class="logo-text">C.A. <span>Bohol.</span></span>
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="#hero" class="active">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#resume">Resume</a></li>
           <li><a href="#menu">Services</a></li>
-
-          <li><a href="#portfolio">Portfolio</a></li>
-          
-          <li><a href="#contact">Hire Me!</a></li>
-         
-     
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Projects</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
         </ul>
-     
-   
-
-
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
+
+      <a href="#contact" class="nav-contact-btn d-none d-xl-inline-block">Contact Me</a>
 
     </div>
   </header>
@@ -81,505 +73,259 @@
   <main class="main">
 
     <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background">
-      <div id="particles-js">
-      </div>
-      <div class="container" data-aos="zoom-out" data-aos-delay="100">
-        <div class="home-info">
-         
-          <div class ="left col-lg-6">
-            <br>
-  
-             <h3>Hello, I'm</h3>
-             <h1>Claire Anne Bohol </h1>
-             <h4>And I'm a <span class="multiple"></span></h4>
-             
-             <div class="social-links">
-              <a href="https://www.facebook.com/clair.ann.940/"><i class="bi bi-facebook"></i></a>
-              <a href="https://github.com/cabohol"><i class="bi bi-github"></i></a>
-              <a href="https://www.linkedin.com/in/claire-bohol-76a76617b/"><i class="bi bi-linkedin"></i></a>
-            </div>
-            <div class="btn">
-              <a href="https://drive.google.com/file/d/1dYYuvixnCwz6dak6iThajOcWaKQ5YuNW/view?usp=sharing">
-              <button>Download CV</button></a>
-            </div>
-          </div>
-          <div class="right col-lg-6">
-            <div class="profile">
-              <img src="assets/img/claire.png" alt="" class="img-fluid mt-5">
-              
+    <section id="hero" class="hero-modern">
+      <div class="container hero-container">
+        <div class="row align-items-center min-vh-hero">
+
+          <!-- LEFT SIDE -->
+          <div class="col-lg-6 hero-left" data-aos="fade-right" data-aos-delay="100">
+            <div class="hero-label">Hello There!</div>
+            <h1 class="hero-heading">
+              I'm <span class="hero-name">Claire Anne Bohol,</span>
+            </h1>
+            <h2 class="hero-typed-line">
+              <span class="typed" data-typed-items="Web Developer,Mobile Developer,Full Stack Developer"></span><span class="typed-cursor" aria-hidden="true"></span>
+            </h2>
+            <h2 class="hero-location">Based in Philippines.</h2>
+            <p class="hero-description">
+              I'm an experienced developer skilled in both front-end and back-end technologies, eager to collaborate on innovative projects and deliver quality, detail-oriented solutions.
+            </p>
+            <div class="hero-buttons">
+              <a href="https://drive.google.com/file/d/1dYYuvixnCwz6dak6iThajOcWaKQ5YuNW/view?usp=sharing" class="btn-portfolio">
+                <span>View My CV</span>
+                <div class="btn-icon"><i class="bi bi-play-fill"></i></div>
+              </a>
+              <a href="#contact" class="btn-hire">Hire Me</a>
             </div>
           </div>
+
+          <!-- RIGHT SIDE -->
+          <div class="col-lg-6 hero-right" data-aos="fade-left" data-aos-delay="200">
+            <div class="hero-image-wrapper">
+              <!-- Yellow circle background -->
+              <div class="hero-circle"></div>
+              <!-- Portrait image -->
+              <img src="assets/img/portfolio/myprofile.png" alt="Claire Anne Bohol" class="hero-portrait">
+              <!-- Floating badges -->
+              <div class="badge-uiux">UI/UX Designer</div>
+              <div class="badge-product">Web Developer</div>
+              <div class="badge-app">Mobile App Developer</div>
+              <div class="badge-llm">LLM Application Developer</div>
+
+              <!-- Circular hire me badge -->
+            
+            </div>
+          </div>
+
         </div>
       </div>
-        <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
-        <defs>
-          <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
-        </defs>
-        <g class="wave1">
-          <use xlink:href="#wave-path" x="50" y="3"></use>
-        </g>
-        <g class="wave2">
-          <use xlink:href="#wave-path" x="50" y="0"></use>
-        </g>
-        <g class="wave3">
-          <use xlink:href="#wave-path" x="50" y="9"></use>
-        </g>
-      </svg>
-
     </section><!-- /Hero Section -->
 
   </main>
 
-      <!-- Clients Section -->
-      <section id="clients" class="clients section light-background">
+  <!-- Skills Strip Section -->
+  <section class="skills-strip">
+    <div class="strip-track">
+      <div class="strip-items">
+        <span>App Design</span> <span class="star">✦</span>
+        <span>Website Design</span> <span class="star">✦</span>
+        <span>Dashboard</span> <span class="star">✦</span>
+        <span>Wireframe</span> <span class="star">✦</span>
+        <span>Mobile Development</span> <span class="star">✦</span>
+        <span>Full Stack Dev</span> <span class="star">✦</span>
+        <span>App Design</span> <span class="star">✦</span>
+        <span>Website Design</span> <span class="star">✦</span>
+        <span>Dashboard</span> <span class="star">✦</span>
+        <span>Wireframe</span> <span class="star">✦</span>
+        <span>Mobile Development</span> <span class="star">✦</span>
+        <span>Full Stack Dev</span> <span class="star">✦</span>
+      </div>
+    </div>
+  </section><!-- /Skills Strip Section -->
 
-        <div class="container" data-aos="zoom-in">
   
-          <div class="swiper init-swiper">
-            <script type="application/json" class="swiper-config">
-              {
-                "loop": true,
-                "speed": 1000,
-                "autoplay": {
-                  "delay": 0
-                },
-                "slidesPerView": "auto",
-                "pagination": {
-                  "el": ".swiper-pagination",
-                  "type": "bullets",
-                  "clickable": true
-                },
-                "breakpoints": {
-                  "320": {
-                    "slidesPerView": 2,
-                    "spaceBetween": 40
-                  },
-                  "480": {
-                    "slidesPerView": 3,
-                    "spaceBetween": 60
-                  },
-                  "640": {
-                    "slidesPerView": 4,
-                    "spaceBetween": 80
-                  },
-                  "992": {
-                    "slidesPerView": 5,
-                    "spaceBetween": 120
-                  },
-                  "1200": {
-                    "slidesPerView": 6,
-                    "spaceBetween": 120
-                  }
-                }
-              }
-            </script>
-            <div class="swiper-wrapper align-items-center">
-              <div class="swiper-slide"><img src="assets/img/csss.png" class="img-fluid" alt=""></div>
-              <div class="swiper-slide"><img src="assets/img/bootstrap-logo-vector.png" class="img-fluid" alt=""></div>
-              <div class="swiper-slide"><img src="assets/img/javascript-logo.png" class="img-fluid" alt=""></div>
-              <div class="swiper-slide"><img src="assets/img/html.jpg" class="img-fluid" alt=""></div>
-              <div class="swiper-slide"><img src="assets/img/post.png" class="img-fluid" alt=""></div>
-              <div class="swiper-slide"><img src="assets/img/supabase-logo-vector.png" class="img-fluid" alt=""></div>
-              <div class="swiper-slide"><img src="assets/img/cprog.png" class="img-fluid" alt=""></div>
-
-            </div>
-          </div>
-  
-        </div>
-  
-      </section><!-- /Clients Section -->
 
    <!-- About Section -->
-   <section id="about" class="about section">
- 
-    <div class="container" data-aos="fade-up" data-aos-delay="100">
-      <div class="container section-title" data-aos="fade-up">
-        <br>
-        <br>
-        
-        <h2>About</h2>
-        
-      </div><!-- End Section Title -->
-      <div class="row">
-        <h6 class="text-center pb-5">LEARN MORE ABOUT ME 
-          <a href="https://drive.google.com/file/d/1dYYuvixnCwz6dak6iThajOcWaKQ5YuNW/view?usp=sharing">
-            <i class="bi bi-link-45deg"></i>       
-           </a>
-        </h6>
-       
-        
-        <div class="col-lg-5 d-flex justify-content-center align-items-center">
-          <div class="aboutme">
-            <img src="assets/img/Bohol__Claire_Anne.jpg-removebg-preview.png" class="img-fluid rounded-circle" alt="">
-          </div>
-        </div>
-      <br>
-         <div class="col-lg-7 pt-4 pt-lg-0 pb-5 mt-4 px-3 content">
-         <div class="container-fluid" data-aos="fade-up" data-aos-delay="200">
-          <h3 class="text-center my-4"><b>
-            <span class="text-white">I am a</span>
-            <span class="typed" data-typed-items ="Student, Mobile Developer, Full-Stack Developer"></span>
-            <span class="typed-cursor" aria-hidden ="true"></span>
-             <span class="text-white"> from Philippines</span>
-          </b></h3>
-          <div class="row">
-            <div class="col-lg-7">
-                <ul>
-                  <li>
-                    <i class="bi bi-chevron-right"></i>
-                    <strong> Fullname:</strong>
-                    <span class="myname"> Claire Anne Bohol </span>
-                  </li>
-                </ul>
-            </div>
-            <div class="col-lg-5">
-              <ul>
-                <li>
-                  <i class="bi bi-chevron-right"></i>
-                  <strong> Nickname:</strong>
-                  <span class="nickname">
-                    <span class="typed" data-typed-items ="Klang, Annie"></span>
-                    <span class="typed-cursor" aria-hidden ="true"></span>
-               </span> 
-              </li>
+   <section id="about" class="about-modern">
+     <div class="container about-modern-inner">
+       <div class="row align-items-center">
+
+         <!-- LEFT: Image with floating skill tags -->
+         <div class="col-lg-4 about-img-col" data-aos="fade-right" data-aos-delay="100">
+           <div class="about-img-wrapper">
+             <div class="about-yellow-circle">
+               <img src="assets/img/portfolio/formalpic.png" alt="Claire Anne Bohol" class="about-portrait">
+             </div>
+             
+           </div>
+         </div>
+
+         <!-- RIGHT: Text content -->
+         <div class="col-lg-8 about-text-col" data-aos="fade-left" data-aos-delay="200">
+           <span class="about-label"><span class="about-dash">&mdash;</span> About Me</span>
+           <h2 class="about-heading">Who is <em>Claire Anne Bohol?</em></h2>
+           <p class="about-desc">
+              Hi, I'm  Claire Anne Luzon Bohol, but you can call me Anne. I am a fourth-year BS Information Technology student at Caraga State University – Main Campus from Butuan City. I develop modern web and mobile applications using Vue.js, Vuetify, React, Supabase, Flutter, and Capacitor.js. I also work with AI technologies such as Large Language Models (LLMs) and machine learning concepts to build intelligent and user-friendly solutions.
+              </p>
+
+              <h6 class="about-academic" >Academic <em>Highlights</em></h6>
+              <ul class="academic-highlights">
+                <li>Fourth-year Bachelor of Science in Information Technology student at Caraga State University – Main Campus.</li>
+                <li>Consistent Academic Excellence Awardee — Dean’s Lister during the early years of the program and Vice President’s Academic Awardee (VPAA) in the succeeding semesters.</li>
+                <li>Developed academic projects focusing on backend and frontend development, machine learning integration, system testing and debugging, technical documentation, and AI development including prompt engineering.</li>
               </ul>
-            </div>
-            <p>I excel in both front-end (HTML, CSS, JavaScript, Bootstrap) and back-end (PostgreSQL, C, Supabase, Java) technologies. I'm eager to explore new challenges and collaborate on innovative projects. Let's connect if you need a detail-oriented developer!</p>
 
-          </div>
-          <hr>
-          <h3 class="text-center my-4 educ-high"><b>Academic Highlights</b></h3>
-         <div class="row">
-          <div class="col-lg-12">
-            <ul>
-              <li>
-                <i class="bi bi-chevron-right"></i> A third-year Information Technology student at Caraga State University.
-               
-              </li>
-              <li><i class="bi bi-chevron-right"></i>With four months of experience in Mobile Application Development.
-                </li>
-            </ul>
-          </div>
+           <div class="about-stats-row">
+             <div class="about-stat-item">
+               <span class="about-stat-num">2+</span>
+               <span class="about-stat-label">Happy Clients</span>
+             </div>
+             <div class="about-stat-item">
+               <span class="about-stat-num">8+</span>
+               <span class="about-stat-label">Projects Completed</span>
+             </div>
+             <div class="about-stat-item">
+               <span class="about-stat-num">4+</span>
+               <span class="about-stat-label">Years of Study</span>
+             </div>
+           </div>
+
+           <div class="about-cta-row">
+             <a href="https://drive.google.com/file/d/1dYYuvixnCwz6dak6iThajOcWaKQ5YuNW/view?usp=sharing" class="about-cv-btn" target="_blank">
+               <span>Download CV</span>
+               <div class="about-cv-arrow"><i class="bi bi-arrow-right"></i></div>
+             </a>
+             <span class="about-signature">Claire Bohol</span>
+           </div>
          </div>
-        </div>
-         </div>
 
-    </div>
-</div>
-  
-
-
-  <!-- Stats Section -->
-  <section id="stats" class="stats section">
-
-    <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-      <div class="row">
-
-        <div class="col-lg-6 col-md-6 d-flex flex-column align-items-center">
-          <i class="bi bi-emoji-smile"></i>
-          <div class="stats-item">
-            <span data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Happy Clients</p>
-          </div>
-        </div><!-- End Stats Item -->
-
-        <div class="col-lg-6 col-md-6 d-flex flex-column align-items-center">
-          <i class="bi bi-journal-richtext"></i>
-          <div class="stats-item">
-            <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Projects</p>
-          </div>
-        </div><!-- End Stats Item -->
-
-     
-
-      </div>
-
-    </div>
-
-  </section><!-- /Stats Section -->
+       </div>
+     </div>
+   </section><!-- /About Section -->
 
     <!-- Skills Section -->
-    <section id="skills" class="skills section">
-    <div class="container-fluid">
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <br>
-        <br>
-        
-        <h2>Ratings</h2>
-        
-      </div><!-- End Section Title -->
-      
-      <h6 class="text-center mt-2"  data-aos="fade-up" data-aos-delay="100">
-        <span class="title-resume text-center">TECH STACK <i class="bi bi-lightbulb"></i></span>
-      </h6>
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        
-        <div class="row skills-content skills-animation pt-4">
-         
-          <div class="col-lg-6">
-             <h3 class="mt-3 text-center">Front-End Frameworks/Libraries</h3>
-             <br>
-             <div class="tech-img">
-              <img src="assets/img/html-1.svg" alt="">
-              <img src="assets/img/css-3.svg" alt="">
-              <img src="assets/img/javascript-1.svg" alt="">
-              <img src="assets/img/bootstrap-5-1.svg" alt="" >
-            </div>
-             <div class="progress">
-              <span class="skill">
-                <span>HTML</span> 
-                <i class="val">
-                  <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="1" class="purecounter">100</span>%
-                </i>
-              </span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
-              </div>
-            </div>
-            
-            <div class="progress">
-              <span class="skill">
-                <span>CSS</span> 
-                <i class="val">
-                  <span data-purecounter-start="0" data-purecounter-end="90" data-purecounter-duration="1" class="purecounter">90</span>%
-                </i>
-              </span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-            
-            <div class="progress">
-              <span class="skill">
-                <span>JavaScript</span> 
-                <i class="val">
-                  <span data-purecounter-start="0" data-purecounter-end="75" data-purecounter-duration="1" class="purecounter">75</span>%
-                </i>
-              </span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-            
-            <div class="progress">
-              <span class="skill">
-                <span>BOOTSTRAP</span> 
-                <i class="val">
-                  <span data-purecounter-start="0" data-purecounter-end="85" data-purecounter-duration="1" class="purecounter">85</span>%
-                </i>
-              </span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-            
-            <h3 class="mt-5 text-center">Mobile/Desktop Technology</h3>
-            <br>
-            <div class="tech-img">
-              <img src="assets/img/capacitor-js.svg" alt="">
-            </div>
-            <div class="progress mt-3">
-              <span class="skill">
-                <span>CAPACITOR-JS</span> 
-                <i class="val">
-                  <span data-purecounter-start="0" data-purecounter-end="57" data-purecounter-duration="1" class="purecounter">57</span>%
-                </i>
-              </span>
-              <div class="progress-bar-wrap text-center">
-                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
+    <section id="skills" class="skills section skills-modern-section">
+      <div class="container-fluid">
 
+        <!-- Section Header -->
+        <div class="container skills-mod-header text-center" data-aos="fade-up">
+          <span class="skills-mod-label"><span class="skills-mod-dash">—</span> My Favorite Tools</span>
+          <h2 class="skills-mod-heading"><em>Exploring the Tools</em></h2>
+          <h2 class="skills-mod-subheading">Behind My Stack</h2>
+        </div>
+
+        <div class="container skills-mod-container">
+          <div class="swiper init-swiper skills-swiper" data-aos="fade-up" data-aos-delay="100">
+            <script type="application/json" class="swiper-config">
+            {
+                "loop": true,
+                "speed": 600,
+                "slidesPerView": 1,
+                "autoplay": {
+                  "delay": 2000,
+                  "disableOnInteraction": false
+                },
+                "observer": true,
+                "observeParents": true,
+                "pagination": {
+                  "el": ".skills-swiper .swiper-pagination",
+                  "type": "bullets",
+                  "clickable": true
+                }
+
+              }
+            </script>
+
+            <div class="swiper-wrapper">
+
+              <!-- SLIDE 1: Front-End -->
+              <div class="swiper-slide">
+                <div class="skill-slide-header">
+                  <span class="skill-cat-name">Front-End Frameworks / Libraries</span>
+                  <div class="skill-cat-line"></div>
+                </div>
+                <br>
+          
+                <div class="skill-grid">
+                  <div class="skill-item"><img src="assets/img/html-1.svg" alt="HTML"><span class="skill-name">HTML</span></div>
+                  <div class="skill-item"><img src="assets/img/css-3.svg" alt="CSS"><span class="skill-name">CSS</span></div>
+                  <div class="skill-item"><img src="assets/img/javascript-1.svg" alt="JavaScript"><span class="skill-name">JavaScript</span></div>
+                  <div class="skill-item"><img src="assets/img/bootstrap-5-1.svg" alt="Bootstrap"><span class="skill-name">Bootstrap</span></div>
+                  <div class="skill-item"><img src="assets/img/veutifyy.png" alt="Vuetify"><span class="skill-name">Vuetify</span></div>
+                  <div class="skill-item"><img src="assets/img/Tailwind_CSS_Logo.svg.png" alt="Tailwind CSS"><span class="skill-name">Tailwind CSS</span></div>
+                  <div class="skill-item"><img src="assets/img/React-icon.svg.png" alt="React"><span class="skill-name">React</span></div>
+                 <div class="skill-item"><img src="assets/img/vuejs (2).png" alt="Vue.js"><span class="skill-name">Vue.js</span></div>
+                </div>
+              </div><!-- /Slide 1 -->
+
+              <!-- SLIDE 2: Back-End -->
+              <div class="swiper-slide">
+                <div class="skill-slide-header">
+                  <span class="skill-cat-name">Back-End Frameworks / Database</span>
+                  <div class="skill-cat-line"></div>
+                </div>
+                    <br>
+                <div class="skill-grid">
+                  <div class="skill-item"><img src="assets/img/postgresql.svg" alt="PostgreSQL"><span class="skill-name">PostgreSQL</span></div>
+                  <div class="skill-item"><img src="assets/img/c-1.svg" alt="C"><span class="skill-name">C</span></div>
+                  <div class="skill-item"><img src="assets/img/supabase-seeklogo.svg" alt="Supabase"><span class="skill-name">Supabase</span></div>
+                  <div class="skill-item"><img src="assets/img/java-4.svg" alt="Java"><span class="skill-name">Java</span></div>
+                  <div class="skill-item"><img src="assets/img/next-js.png" alt="Next.js"><span class="skill-name">Next.js</span></div>
+                  <div class="skill-item"><img src="assets/img/Laravel.svg.png" alt="Laravel"><span class="skill-name">Laravel</span></div>
+                </div>
+              </div><!-- /Slide 2 -->
+
+
+              
+              <!-- SLIDE 3: Back-End -->
+              <div class="swiper-slide">
+                <div class="skill-slide-header">
+                  <span class="skill-cat-name">Mobile/Desktop Technologies</span>
+                  <div class="skill-cat-line"></div>
+                </div>
+                <br>
+                <div class="skill-grid">
+                  <div class="skill-item"><img src="assets/img/capacitor-js.svg" alt="Capacitor.js"><span class="skill-name">Capacitor.js</span></div>
+                  <div class="skill-item"><img src="assets/img/flutter-logo-8a54.png" alt="Flutter"><span class="skill-name">Flutter</span></div>
+
+                </div>
+              </div><!-- /Slide 2 -->
+
+              <!-- SLIDE 3: Others -->
+              <div class="swiper-slide">
+                <div class="skill-slide-header">
+                  <span class="skill-cat-name">Others</span>
+                  <div class="skill-cat-line"></div>
+                </div>
+                    <br>
+                <div class="skill-grid">
+                  <div class="skill-item"><img src="assets/img/git.png" alt="Git"><span class="skill-name">Git</span></div>
+                  <div class="skill-item"><img src="assets/img/github.png" alt="GitHub"><span class="skill-name">GitHub</span></div>
+                  <div class="skill-item"><img src="assets/img/Figma-Emblem.png" alt="Figma"><span class="skill-name">Figma</span></div>
+                  <div class="skill-item"><img src="assets/img/1656733637logo-canva-png.png" alt="Canva"><span class="skill-name">Canva</span></div>
+                  <div class="skill-item"><img src="assets/img/Capcut-Logo-PNG.png" alt="CapCut"><span class="skill-name">CapCut</span></div>
+                </div>
+              </div><!-- /Slide 3 -->
+
+            </div>
+            <div class="swiper-pagination"></div>
           </div>
-
-
-          <div class="col-lg-6">
-            <h3 class="mt-3 text-center">Back-End Frameworks/Database</h3>
-            <br>
-             <div class="tech-img">
-              <img src="assets/img/postgresql.svg" alt="">
-              <img src="assets/img/c-1.svg" alt="">
-              <img src="assets/img/supabase-seeklogo.svg" alt="">
-              <img src="assets/img/java-4.svg" alt="" >
-            </div>
-          
-            <!-- End Skills Item -->
-          
-            <div class="progress">
-              <span class="skill">
-                <span>POSTGRESQL</span> 
-                <i class="val">
-                  <span data-purecounter-start="0" data-purecounter-end="90" data-purecounter-duration="1" class="purecounter">90</span>%
-                </i>
-              </span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-          
-            <div class="progress">
-              <span class="skill">
-                <span>C</span> 
-                <i class="val">
-                  <span data-purecounter-start="0" data-purecounter-end="60" data-purecounter-duration="1" class="purecounter">60</span>%
-                </i>
-              </span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-          
-            <div class="progress">
-              <span class="skill">
-                <span>SUPABASE</span> 
-                <i class="val">
-                  <span data-purecounter-start="0" data-purecounter-end="55" data-purecounter-duration="1" class="purecounter">55</span>%
-                </i>
-              </span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-          
-            <div class="progress">
-              <span class="skill">
-                <span>JAVA</span> 
-                <i class="val">
-                  <span data-purecounter-start="0" data-purecounter-end="57" data-purecounter-duration="1" class="purecounter">57</span>%
-                </i>
-              </span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="57" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-          
-            <h3 class="mt-5 text-center">Networking and Infrastructure</h3>
-            <br>
-            <div class="tech-img">
-              <img src="assets/img/cisco-2.svg" alt="">
-            </div>
-            <div class="progress mt-3">
-              <span class="skill">
-                <span>CISCO</span> 
-                <i class="val">
-                  <span data-purecounter-start="0" data-purecounter-end="60" data-purecounter-duration="1" class="purecounter">60</span>%
-                </i>
-              </span>
-              <div class="progress-bar-wrap text-center">
-                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-
-            
-          </div>
-          
-          
-         
-        
-        
         </div>
 
       </div>
-
-</div>
     </section><!-- /Skills Section -->
-<br>
-<br>
-      <!-- Interests Section -->
-  <section id="interests" class="interests section">
-   <div class="container-fluid">
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-          <h2>Hobbies</h2>
-               </div><!-- End Section Title -->
-               <h6 class="text-center pb-5 " data-aos="fade-up" data-aos-delay="100">
-                <span class="title-resume text-center">INTERESTS <i class="bi bi-stars"></i></span>
-              </h6>  
-              <div class="container">
-                <div class="row mb-5 pb-5">
-                  <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="features-item">
-                      <i class="fa-solid fa-broom"></i>
-                      <h4 class="ps-3">Cleaning</h4>
-                    </div>      
-                  </div>
-                  <div class="col-lg-3 col-md-4 mt-4 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
-                    <div class="features-item">
-                      <i class="fa-solid fa-code"></i>
-                      <h4 class="ps-3">Coding</h4>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-4 mt-4 mt-4 mt-md-0"data-aos="fade-up" data-aos-delay="300">
-                    <div class="features-item">
-                      <i class="fa-solid fa-plane-departure"></i>
-                      <h4 class="ps-3">Traveling</h4>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-4 mt-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
-                    <div class="features-item">
-                      <i class="fa-solid fa-gamepad"></i>
-                      <h4 class="ps-3">Playing</h4>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-4 mt-4" data-aos="fade-up" data-aos-delay="500">
-                    <div class="features-item">
-                      <i class="fa-solid fa-tv"></i>
-                      <h4 class="ps-3">Watching</h4>
-                    </div>
-      
-      
-                  </div>
-                  <div class="col-lg-3 col-md-4 mt-4"data-aos="fade-up" data-aos-delay="600">
-                    <div class="features-item">
-                      <i class="fa-solid fa-binoculars"></i>
-                      <h4 class="ps-4">Exploring</h4>
-                    </div>
-      
-                  </div>
-                  <div class="col-lg-3 col-md-4 mt-4"data-aos="fade-up" data-aos-delay="700">
-                    <div class="features-item">
-                      <i class="fa-solid fa-person-swimming"></i>
-                      <h4 class="ps-3">Swimming</h3>
-                    </div>
-      
-      
-                  </div>
-                  <div class="col-lg-3 col-md-4 mt-4"data-aos="fade-up" data-aos-delay="800">
-                    <div class="features-item">
-                      <i class="fa-solid fa-utensils"></i>
-                      <h4 class="ps-4">Cooking</h4>
-                    </div>
-      
-      
-                  </div>
 
-                </div>
-                </div>
-      </div>
-    
-     </section><!-- /Interests Section -->
-    </section><!-- /About Section -->
 
      <!-- Resume Section -->
      <section id="resume" class="resume section">
   <div class="container-fluid">
      
 <!-- Section Title -->
-<div class="container section-title" data-aos="fade-up">
-  <h2>Resume</h2>
-</div><!-- End Section Title -->
-<h6 class="text-center pb-5" data-aos="fade-up" data-aos-delay="100">
-  <span class="title-resume">MY RESUME</span>
-  <a href="https://drive.google.com/file/d/1dYYuvixnCwz6dak6iThajOcWaKQ5YuNW/view?usp=sharing">
-    <i class="bi bi-link-45deg"></i>       
-   </a>
-</h6>
-
+     <div class="container skills-mod-header text-center" data-aos="fade-up">
+          <span class="skills-mod-label"><span class="skills-mod-dash">—</span> Education and Projects</span>
+          <h2 class="skills-mod-heading"><em>My Academic and</em></h2>
+          <h2 class="skills-mod-subheading">Project Experience</h2>
+        </div>
  <div class="container">
         <div class="row mb-5">
           <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
@@ -646,7 +392,7 @@
              <div class="resume-item">
               <h4><b>Website Redesign – LTMS (Land Transportation Management System)</b></h4>
               <h5>November 2025 - December 2025</h5>
-              <p><em>Web Design / UI-UX  Designer</em></p>
+              <p><em>Web Design / UI-UX  Designer</em></h4>
               <ul>
                 <li>I redesigned the website layout using React.js and JavaScript to enhance visual clarity and streamline navigation through the application of core UI/UX principles. By optimizing the user flow with HTML5 and CSS3, I significantly improved overall usability and ensured a more intuitive user experience.</li>
             </div><!-- Edn Resume Item -->
@@ -861,52 +607,78 @@
     </div>
   </div>
 </section>
-
-
-</section><!-- /Resume Section -->
-
-<br>    <!-- Portfolio Section -->
+<br>  
 
 
     <!-- Menu Section -->
-    <section id="menu" class="menu section">
-   <div class="container-fluid">
-    <div class="container section-title" data-aos="fade-up">
-      <h2>SERVICES</h2>
-    </div><!-- End Section Title -->
+    <section id="menu" class="menu section services-modern">
       <div class="container">
-        <h6 class="text-center pb-5"  data-aos="fade-up" data-aos-delay="100">MY SERVICES  <i class="bi bi-briefcase"></i>
-        </h6> 
 
-        <ul class="nav nav-tabs d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
-
-          <li class="nav-item">
-            <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#menu-starters">
-              <h4>Mobile App Development</h4>
+        <!-- Section Header Row -->
+        <div class="row align-items-center services-header mb-5" data-aos="fade-up">
+          <div class="col-lg-7">
+            <span class="services-label"><span class="services-dash">—</span> Services</span>
+            <h2 class="services-heading"><em>Services</em> I Provide</h2>
+          </div>
+          <div class="col-lg-5 d-flex justify-content-lg-end justify-content-start mt-3 mt-lg-0">
+            <a href="#contact" class="btn-view-services">
+              <span>View All Services</span>
+              <div class="btn-arrow-circle"><i class="bi bi-arrow-right"></i></div>
             </a>
-          </li><!-- End tab nav item -->
+          </div>
+        </div>
 
-          <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-breakfast">
-              <h4>Graphic Design</h4>
-            </a><!-- End tab nav item -->
+        <!-- Service Cards -->
+        <div class="row gy-4" data-aos="fade-up" data-aos-delay="100">
 
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-lunch">
-              <h4> Networking Solutions</h4>
-            </a>
-          </li><!-- End tab nav item -->
+          <div class="col-lg-3 col-md-6">
+            <div class="service-card">
+              <div class="service-icon-wrap">
+                <i class="bi bi-phone"></i>
+              </div>
+              <h4 class="service-card-title">Mobile App Development</h4>
+              <p class="service-card-desc">Custom cross-platform mobile apps for Android and iOS with intuitive UI and seamless user experience.</p>
+              <a href="#contact" class="service-learn-more">Learn more <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
 
-          <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-dinner">
-              <h4>Web Design & Development</h4>
-            </a>
-          </li><!-- End tab nav item -->
+          <div class="col-lg-3 col-md-6">
+            <div class="service-card">
+              <div class="service-icon-wrap">
+                <i class="bi bi-palette"></i>
+              </div>
+              <h4 class="service-card-title">Graphic Design</h4>
+              <p class="service-card-desc">Creative logos, branding, visual identities, and digital artwork that make your brand stand out.</p>
+              <a href="#contact" class="service-learn-more">Learn more <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
 
-        </ul>
+          <div class="col-lg-3 col-md-6">
+            <div class="service-card">
+              <div class="service-icon-wrap">
+                <i class="bi bi-hdd-network"></i>
+              </div>
+              <h4 class="service-card-title">Networking Solutions</h4>
+              <p class="service-card-desc">Secure, reliable LAN/WAN setup, Cisco device configuration and network security for seamless operations.</p>
+              <a href="#contact" class="service-learn-more">Learn more <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
 
-        <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-3 col-md-6">
+            <div class="service-card">
+              <div class="service-icon-wrap">
+                <i class="bi bi-layout-text-window-reverse"></i>
+              </div>
+              <h4 class="service-card-title">Web Design & Development</h4>
+              <p class="service-card-desc">Responsive, visually engaging websites built with modern tech, optimized for performance and SEO.</p>
+              <a href="#contact" class="service-learn-more">Learn more <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+        </div><!-- End Service Cards -->
+
+        <!-- Hidden original tab content kept for reference, replaced by cards above -->
+        <div class="tab-content d-none" data-aos="fade-up" data-aos-delay="200">
 
           <div class="tab-pane fade active show" id="menu-starters">
 
@@ -1049,10 +821,10 @@
             </div>
           </div><!-- End Dinner Menu Content -->
 
-        </div>
+        </div><!-- End hidden tab-content -->
 
-      </div>
-</div>
+      </div><!-- End container -->
+    </section><!-- /Menu Section -->
     
 <br>
 <br>
@@ -1159,8 +931,6 @@
 </div>
 </section><!-- /Testimonials Section -->
 
-</section><!-- /Menu Section -->
-
 
 
 
@@ -1261,16 +1031,16 @@
 
             <div class="col-lg-4 col-md-6  portfolio-item isotope-item filter-app">
               <div class="portfolio-content ">
-                <img src="assets/img/personalweb.png" class="img-fluid" alt="">
+                <img src="assets/img/recipef.png" class="img-fluid" alt="Recipe Finder">
                 <div class="portfolio-info">
-                  <p>Personal Website</p>
-                  <a href="assets/img/personalweb.png" title="Personal Website" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="index.html" title="Personal Website" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <p>Recipe Finder</p>
+                  <a href="assets/img/recipef.png" title="Recipe Finder" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://github.com/prinsnnyo/RecipeFinder" title="Recipe Finder" class="details-link"><i class="bi bi-link-45deg"></i></a>
 
                 </div>
               </div>
               <div class="class text-center p-3">
-                <p class="mt-3"> <span><b>Personal Website</b></span> a dedicated online space where individuals can present their portfolio, skills, achievements, and personal brand. It acts as a digital resume, showcasing projects, work experience, and expertise. The site is intended for professional networking, attracting potential clients or employers, and providing a centralized platform to highlight one's identity and career accomplishments.
+                <p class="mt-3"> <span><b>Recipe Finder</b></span> is a web application designed to help users discover and explore a wide variety of recipes. It provides an intuitive interface for searching recipes based on ingredients, dietary preferences, and cooking time. The application features a clean and user-friendly design, making it easy for users to find the perfect recipe for their needs.
               <br>
           </p>
               </div>
@@ -1279,16 +1049,76 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
               <div class="portfolio-content h-100">
-                <img src="assets/img/enrollmentsystem.png" class="img-fluid" alt="">
+                <img src="assets/img/rentacomp.png" class="img-fluid" alt="Rent a Computer">
                 <div class="portfolio-info">
-                  <p>Enrollment System</p>
-                  <a href="assets/img/enrollmentsystem.png" title="Enrollment System" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://drive.google.com/drive/folders/1Hk_EZ81LEz9R3x_QeKyRES6hkrgk7vAb?usp=sharing" title="Enrollment System" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <p>Rent a Computer</p>
+                  <a href="assets/img/rentacomp.png" title="Rent a Computer" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://rentacomputer.vercel.app/" title="Rent a Computer" class="details-link"><i class="bi bi-link-45deg"></i></a>
 
                 </div>
               </div>
               <div class="class text-center p-3">
-                <p class="mt-3">Our <span><b>Enrollment System</b></span> integrates Remote Method Invocation (RMI) for seamless communication between distributed components, sophisticated data parsing for accurate data handling, and a robust database framework for efficient data management. Built on Laravel, this system provides a simple user-friendly interface, ensuring a smooth and reliable enrollment experience.
+                <p class="mt-3"><span><b>Rent a Computer</b></span> is a website redesigned by our team to improve usability, navigation, and overall user experience, creating a more intuitive and seamless rental platform. The layout was enhanced using React.js and JavaScript, while HTML5 and CSS3 were utilized to optimize user flow and significantly improve visual clarity and usability.
+
+                </p>
+              </div>
+            </div><!-- End Portfolio Item -->
+ 
+          </div><!-- End Portfolio Container -->
+
+
+             <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6  portfolio-item isotope-item filter-app">
+              <div class="portfolio-content ">
+                <img src="assets/img/productscan.png" class="img-fluid" alt="Product Scanner">
+                <div class="portfolio-info">
+                  <p>Product Scanner</p>
+                  <a href="assets/img/productscan.png" title="Product Scanner" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://drive.google.com/drive/folders/1adRBx9uLeAQdr2r4TinNGfrChoI_HO60?usp=sharing" title="Product Scanner" class="details-link"><i class="bi bi-link-45deg"></i></a>
+
+                </div>
+              </div>
+              <div class="class text-center p-3">
+                <p class="mt-3"> <span><b>Product Scanner</b></span> is a web application designed to help users quickly scan and access information about products. It provides an intuitive interface for searching products based on barcodes, names, and other identifiers. The application features a clean and user-friendly design, making it easy for users to find the information they need.
+              <br>
+            <br>
+            <br>
+          </p>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6  portfolio-item isotope-item filter-app">
+              <div class="portfolio-content ">
+                <img src="assets/img/diameal.png" class="img-fluid" alt="DiaMeal">
+                <div class="portfolio-info">
+                  <p>DiaMeal</p>
+                  <a href="assets/img/diameal.png" title="DiaMeal" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://drive.google.com/drive/folders/1dRNygGNetbfopgW7vr4VDa13vGj7R5au?usp=sharing" title="DiaMeal" class="details-link"><i class="bi bi-link-45deg"></i></a>
+
+                </div>
+              </div>
+              <div class="class text-center p-3">
+                <p class="mt-3"> <span><b>DiaMeal</b></span> is a web application designed to help users discover and explore a wide variety of recipes. It provides an intuitive interface for searching recipes based on ingredients, dietary preferences, and cooking time. The application features a clean and user-friendly design, making it easy for users to find the perfect recipe for their needs.
+              <br>
+          </p>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/rentacomp.png" class="img-fluid" alt="Rent a Computer">
+                <div class="portfolio-info">
+                  <p>Rent a Computer</p>
+                  <a href="assets/img/rentacomp.png" title="Rent a Computer" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://rentacomputer.vercel.app/" title="Rent a Computer" class="details-link"><i class="bi bi-link-45deg"></i></a>
+
+                </div>
+              </div>
+              <div class="class text-center p-3">
+                <p class="mt-3"><span><b>Rent a Computer</b></span> is a website redesigned by our team to improve usability, navigation, and overall user experience, creating a more intuitive and seamless rental platform. The layout was enhanced using React.js and JavaScript, while HTML5 and CSS3 were utilized to optimize user flow and significantly improve visual clarity and usability.
+
                 </p>
               </div>
             </div><!-- End Portfolio Item -->
