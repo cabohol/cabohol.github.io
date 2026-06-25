@@ -467,15 +467,34 @@ h6 {
 
 
 /*--------------------------------------------------------------
-# Global Footer
+# Global Footer — White Redesign
 --------------------------------------------------------------*/
 .footer {
-  color: var(--default-color);
-  background-color: var(--background-color);
+  color: #1a1a1a;
+  background-color: #ffffff !important;
   font-size: 14px;
   text-align: center;
-  padding: 30px 0;
+  padding: 24px 0;
   position: relative;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.footer .sitename {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.footer-icon {
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+  margin-right: 8px;
 }
 
 .footer h3 {
@@ -487,7 +506,7 @@ h6 {
 }
 
 .footer p {
-  font-size: 15;
+  font-size: 15px;
   font-style: italic;
   padding: 0;
   margin: 0 0 30px 0;
@@ -502,8 +521,8 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--accent-color);
-  color: var(--contrast-color);
+  background: #234b3a;
+  color: #ffffff;
   line-height: 1;
   margin: 0 4px;
   border-radius: 50%;
@@ -513,22 +532,20 @@ h6 {
   transition: 0.3s;
 }
 
-
 .footer .social-links a:hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 20%);
-  text-decoration: none;
+  background: #f2a900;
+  color: #1a1a1a;
 }
 
 .footer .copyright {
-  padding-top: 25px;
-  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  padding-top: 0;
+  border-top: none;
 }
 
 .footer .credits {
   font-size: 13px;
   padding-top: 5px;
 }
-
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -651,7 +668,7 @@ h6 {
   right: 15px;
   bottom: -15px;
   z-index: 99999;
-  background-color: var(--accent-color);
+  background-color: #f0c808;
   width: 44px;
   height: 44px;
   border-radius: 50px;
@@ -665,7 +682,7 @@ h6 {
 }
 
 .scroll-top:hover {
-  background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+  background-color: color-mix(in srgb, #f0c808, transparent 20%);
   color: var(--contrast-color);
 }
 
@@ -2313,112 +2330,309 @@ section,
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
-.contact h6{
-  font-size: 2.2rem;
-  font-weight: bold;
-  letter-spacing: 0.5px;
-  color: var(--default-color);
-  border-radius: 25px;
-
+/*--------------------------------------------------------------
+# Contact Section — Modern White Redesign
+--------------------------------------------------------------*/
+.contact {
+  background-color: #ffffff !important;
+  padding: 90px 0 70px;
 }
 
+/* Section header — matches Portfolio header style */
+.contact-mod-header {
+  margin-bottom: 56px;
+}
+.contact-mod-label {
+  display: block;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #777;
+  margin-bottom: 8px;
+  letter-spacing: 0.3px;
+}
+.contact-mod-dash {
+  color: #f2a900;
+  font-weight: 900;
+  margin-right: 8px;
+}
+.contact-mod-heading {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.6rem;
+  font-weight: 400;
+  color: #f2a900;
+  font-style: italic;
+  line-height: 1.15;
+  margin-bottom: 2px;
+}
+.contact-mod-subheading {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.6rem;
+  font-weight: 800;
+  color: #1a1a1a;
+  line-height: 1.15;
+  margin: 0 0 18px 0;
+}
+.contact-mod-tagline {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.97rem;
+  color: #6b7280;
+  max-width: 480px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* Image side */
+.contact-image-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 380px;
+}
+.contact-image-wrap::before {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: #f2a900;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+.contact-image {
+  position: relative;
+  z-index: 1;
+  max-width: 500px;
+  max-height: 500px;
+  width: auto;
+  height: auto;
+  display: block;
+  mask-image: linear-gradient(to bottom, hsla(0,0%,0%,1) 90%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, hsla(0,0%,0%,1) 88%, transparent 100%);
+}
+
+/* Info cards */
 .contact .info-item {
-  box-shadow: 0px 0px 20px rgba(17, 17, 17, 0.833);
-  padding: 20px 30px;
-  background-color: #343434;
-  margin-bottom: 20px; /* Adds space between each info-item */
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  padding: 20px 26px;
+  background-color: #f7f7f7;
+  border-radius: 14px;
+  margin-bottom: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact .info-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 28px rgba(35, 75, 58, 0.12);
 }
 
 .contact .info-item:last-of-type {
-  margin-bottom: 0; /* Removes margin from the last item */
+  margin-bottom: 0;
 }
 
 .contact .info-item .icon {
-  color: var(--background-color);
-  background-color: var(--accent-color);
-  width: 56px;
-  height: 56px;
-  font-size: 24px;
+  color: #ffffff;
+  background-color: #234b3a;
+  width: 52px;
+  height: 52px;
+  font-size: 22px;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 0.3s ease-in-out;
   border-radius: 50%;
-  margin-right: 15px;
+  margin-right: 18px;
+  flex-shrink: 0;
+}
+
+.contact .info-item:hover .icon {
+  background-color: #f2a900;
+  color: #1a1a1a;
 }
 
 .contact .info-item h3 {
-  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
   font-weight: 700;
-  margin: 0 0 2px 0;
+  color: #1a1a1a;
+  margin: 0 0 3px 0;
 }
 
-.info-item p {
+.contact .info-item p,
+.contact .info-item a {
+  font-family: 'Poppins', sans-serif;
   font-size: 14px;
   margin: 0;
-  color: var(--default-color);
-  word-wrap: break-word; /* Ensures long text wraps within its container */
-}
-
-.contact .info-item .social-links a {
-  font-size: 24px;
-  display: inline-block;
-  line-height: 1;
-  margin: 4px 6px 0 0;
-  transition: 0.3s;
-  color: var(--default-color)
-
-}
-
-/* Style for email links */
-.contact .info-item a {
-  color: var(--default-color);
-  text-decoration: none; /* Remove underline if needed */
+  color: #6b7280;
+  text-decoration: none;
+  word-wrap: break-word;
 }
 
 .contact .info-item a:hover {
-  color: var(--accent-color)!important ; /* Change color on hover */
+  color: #f2a900 !important;
 }
 
-.contact .emaill:hover{
-  color: var(--accent-color);
+.contact .emaill:hover {
+  color: #f2a900;
 }
 
-/* Social links hover effect */
-.contact .info-item .social-links a:hover{
-  color: var(--accent-color) !important ;
+.contact .info-item .social-links {
+  display: flex;
+  gap: 8px;
+  margin-top: 4px;
 }
 
-/* Media Query for smaller screens */
+.contact .info-item .social-links a {
+  font-size: 16px;
+  width: 34px;
+  height: 34px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #234b3a;
+  color: #ffffff !important;
+  line-height: 1;
+  transition: 0.3s;
+}
+
+.contact .info-item .social-links a:hover {
+  background: #f2a900;
+  color: #1a1a1a !important;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .contact-mod-heading,
+  .contact-mod-subheading { font-size: 2rem; }
+  .contact-image-wrap { margin-bottom: 30px; }
+}
+
 @media (max-width: 768px) {
-  .info-item p {
-    font-size: 14px; /* Reduce font size for smaller screens */
-  }
+  .contact .info-item { padding: 16px 18px; }
+  .contact .info-item h3 { font-size: 14px; }
+  .contact .info-item p,
+  .contact .info-item a { font-size: 13px; }
 }
 
-/* Media Query for very small screens (like mobile phones) */
 @media (max-width: 480px) {
-  .info-item p {
-    font-size: 11px; /* Further reduce font size for smaller devices */
-    word-wrap: break-word; /* Ensure long words like email addresses wrap */
-    white-space: normal; /* Allow wrapping */
+  .contact-mod-heading,
+  .contact-mod-subheading { font-size: 1.6rem; }
+  .contact .info-item .icon {
+    width: 44px;
+    height: 44px;
+    font-size: 18px;
+    margin-right: 14px;
   }
 }
 
-
-
-.contact-image {
-  max-width: 100%; /* Allows the image to scale down with its container */
-  max-height: 490px; /* Keeps the height constraint */
-  width: auto; /* Keeps the aspect ratio */
-  height: auto; /* Keeps the aspect ratio */
-  display: block;
-  animation: glow 2s infinite ease-in-out; /* Apply the glow animation */
-  mask-image: linear-gradient(to bottom, hsla(0,0%,0%,1) 60%, transparent 100%); /* Apply the mask gradient */
-   background-color: hsl(0, 0%, 100%);
-   border-radius: 7%;
+/*--------------------------------------------------------------
+# Contact Form
+--------------------------------------------------------------*/
+.contact-form {
+  background: #234b3a;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 10px 40px rgba(35, 75, 58, 0.18);
 }
 
+.contact-form .form-group {
+  margin-bottom: 26px;
+}
+
+.contact-form .form-control {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  padding: 8px 4px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  resize: none;
+}
+
+.contact-form .form-control::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.contact-form .form-control:focus {
+  border-bottom-color: #f2a900;
+}
+
+.contact-form textarea.form-control {
+  min-height: 100px;
+}
+
+.btn-submit {
+  display: block;
+  width: 100%;
+  background: #f2a900;
+  color: #1a1a1a;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 16px 0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-submit:hover {
+  background: #ffffff;
+  transform: translateY(-2px);
+}
+
+.btn-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Status messages */
+.form-status .loading,
+.form-status .error-message,
+.form-status .sent-message {
+  display: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-bottom: 18px;
+}
+
+.form-status .loading {
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+}
+
+.form-status .error-message {
+  background: #df1529;
+  color: #ffffff;
+}
+
+.form-status .sent-message {
+  background: #f2a900;
+  color: #1a1a1a;
+  font-weight: 600;
+}
+
+@media (max-width: 480px) {
+  .contact-form {
+    padding: 28px 22px;
+  }
+}
 
 
 
@@ -3020,11 +3234,17 @@ background-color: #222121; /* Dark gray background */
   margin-right: 10px;
   flex-shrink: 0;
 }
+
+.header-modern .logo .logo-mark {
+  width: 60px;
+  height: auto;
+  max-height: none;
+}
 .header-modern .logo-text {
   font-family: 'Poppins', sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.8rem;
   font-weight: 700;
-  color: #1a1a1a;
+  color: #f2a900;
   letter-spacing: -0.5px;
 }
 .header-modern .logo-text span {
